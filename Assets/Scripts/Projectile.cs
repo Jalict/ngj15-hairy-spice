@@ -16,7 +16,7 @@ public class Projectile : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other){
-		if (other.gameObject.tag == "Boxes"){
+		if (other.gameObject.tag == "Boxes" || other.gameObject.tag == "Wall"){
 			Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
 			foreach (Collider hit in colliders) {
 				if (hit && hit.rigidbody)
@@ -26,6 +26,7 @@ public class Projectile : MonoBehaviour {
 
 			Destroy(this.gameObject);
 		}
+
 
 	}
 }
