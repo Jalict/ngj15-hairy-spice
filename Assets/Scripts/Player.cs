@@ -50,10 +50,13 @@ public class Player : MonoBehaviour {
 			//isDead = false;
 		}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 
 
 =======
+=======
+>>>>>>> Stashed changes
 	}
 >>>>>>> Stashed changes
 
