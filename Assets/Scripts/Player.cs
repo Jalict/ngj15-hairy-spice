@@ -25,10 +25,12 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		movement.y -= gravity * Time.deltaTime; 
+		if (!controller.isGrounded){
+			movement.y -= gravity * Time.deltaTime; 
+		}
 
 		// Jumping
-		if(Input.GetButtonDown("A_"+ (xboxController+1))) {
+		if(Input.GetButtonDown("A_"+ (xboxController+1)) && controller.isGrounded) {
 			movement.y = jumpSpeed;
 
 		}
@@ -39,19 +41,19 @@ public class Player : MonoBehaviour {
 		controller.Move(movement * Time.deltaTime);
 
 		// Check death, respawn
-		if (isDead) {
+		//if (isDead) {
 			// Get list of respawn positions for player spawning
 			// TODO: Make sure that the respawn positions haven't just been used
-			GameObject[] respawnPositions = GameObject.FindGameObjectsWithTag("Respawn");
+			//GameObject[] respawnPositions = GameObject.FindGameObjectsWithTag("Respawn");
 
 			// Just choose a random one (Bad lol)
-			transform.position = respawnPositions[Random.Range(0,respawnPositions.Length)].transform.position;
+			//transform.position = respawnPositions[Random.Range(0,respawnPositions.Length)].transform.position;
 
-			isDead = false;
+			//isDead = false;
 		}
 
 
-	}
+
 
 	public void Kill() {
 		isDead = true;
