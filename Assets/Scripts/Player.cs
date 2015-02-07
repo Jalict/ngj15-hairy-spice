@@ -13,7 +13,6 @@ public class Player : MonoBehaviour {
 
 	CharacterController controller;
 
-
 	// Use this for initialization 
 	void Start () {
 		controller = GetComponent<CharacterController> ();
@@ -32,7 +31,6 @@ public class Player : MonoBehaviour {
 		// Jumping
 		if(Input.GetButtonDown("A_"+ (xboxController+1)) && controller.isGrounded) {
 			movement.y = jumpSpeed;
-
 		}
 
 		// Check for left, right movement
@@ -51,9 +49,13 @@ public class Player : MonoBehaviour {
 
 			//isDead = false;
 		}
+<<<<<<< Updated upstream
 
 
 
+=======
+	}
+>>>>>>> Stashed changes
 
 	public void Kill() {
 		isDead = true;
