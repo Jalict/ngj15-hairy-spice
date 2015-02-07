@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SceneHandler : MonoBehaviour {
+public class PlayerSelection : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
