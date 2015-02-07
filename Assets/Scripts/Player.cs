@@ -7,7 +7,8 @@ public class Player : MonoBehaviour {
 	public float gravity;
 	public float movementSpeed;
 
-	bool isDead;
+	public bool isDead;
+    public bool isJoined;
 	public Vector3 movement;
 
 	CharacterController controller;
@@ -18,7 +19,9 @@ public class Player : MonoBehaviour {
 		controller = GetComponent<CharacterController> ();
 
 		isDead = true;
+        isJoined = true;
 	}
+
 	
 	// Update is called once per frame
 	void Update () {
