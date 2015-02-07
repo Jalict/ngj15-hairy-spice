@@ -6,10 +6,13 @@ public class Player : MonoBehaviour {
 	public float jumpSpeed;
 	public float gravity;
 	public float movementSpeed;
-
+	public int health;
+	public int maxHealth;
+	public float DmgTakeScale;
 	public bool isDead;
     public bool isJoined;
 	public Vector3 movement;
+	GameObject lastHitBy;
 
 	CharacterController controller;
 
@@ -17,8 +20,7 @@ public class Player : MonoBehaviour {
 	void Start () {
 		controller = GetComponent<CharacterController> ();
 
-		isDead = true;
-        isJoined = true;
+	
 	}
 
 	
@@ -35,7 +37,7 @@ public class Player : MonoBehaviour {
 
 		// Check for left, right movement
 		movement.x = Input.GetAxis ("L_XAxis_" + (xboxController + 1)) * movementSpeed;
-		
+
 		controller.Move(movement * Time.deltaTime);
 
 		// Check death, respawn
@@ -48,19 +50,30 @@ public class Player : MonoBehaviour {
 			//transform.position = respawnPositions[Random.Range(0,respawnPositions.Length)].transform.position;
 
 			//isDead = false;
-		}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-
-
-
-=======
-=======
->>>>>>> Stashed changes
+		transform.position = new Vector3(transform.position.x, transform.position.y, -2);
+		
 	}
->>>>>>> Stashed changes
 
 	public void Kill() {
 		isDead = true;
+	}
+	void OnControllerColliderHit(ControllerColliderHit collision){
+		
+		if (collision.gameObject.tag == "Enemy"){
+		
+		GameObject hitby = collision.gameObject.GetComponent<ObjectFollow>().target;
+		if(hitby.rigidbody.velocity.magnitude > 0 && collision.gameObject != lastHitBy && hitby.GetComponent<PropCollider>().playerHit != xboxController+1){
+			print("colissioN!");
+			lastHitBy = collision.gameObject;
+				health -= (int)(hitby.gameObject.rigidbody.velocity.magnitude * DmgTakeScale);
+				print("Damage taken: " + hitby.gameObject.rigidbody.velocity.magnitude * DmgTakeScale);
+			print((float) (health / maxHealth));
+			GameObject.Find ("HPBAR" + (xboxController+1)).GetComponent<UIProgressBar>().value =  ((float)health / (float)maxHealth);
+		}
+		}
+		if (collision.gameObject.tag == "Hole"){
+			transform.position = GameObject.Find("PlayerSpawn" + xboxController).transform.position;
+		}
+		
 	}
 }

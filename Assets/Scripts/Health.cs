@@ -3,15 +3,15 @@ using System.Collections;
 
 public class Health : MonoBehaviour {
 
-	public int health = 100;
-	public int DmgTakeScale = 1;
+	public int health;
+	public int DmgTakeScale;
 
 
 	void OnCollisionEnter(Collision collision){
 
-		print("Collision!");
 
-		if(collision.gameObject.tag == "enemy" && collision.relativeVelocity.magnitude > 0){
+
+		if(collision.gameObject.tag == "Enemy" && collision.relativeVelocity.magnitude > 0){
 
 			health -= (int)(collision.relativeVelocity.magnitude * DmgTakeScale);
 
