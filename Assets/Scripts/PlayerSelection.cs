@@ -21,12 +21,12 @@ public class PlayerSelection : MonoBehaviour {
 
 				playersReady++;
 				GameObject.Find ("Player_" + i).GetComponent<Player>().isJoined = true;
-				GameObject.Find ("Player_" + i).renderer.material.color = Color.red;
+				//GameObject.Find ("Player_" + i).renderer.material.color = Color.red;
 				}
 				else
 				{
 					GameObject.Find ("Player_" + i).GetComponent<Player>().isJoined = false;
-					GameObject.Find ("Player_" + i).renderer.material.color = Color.white;
+					//GameObject.Find ("Player_" + i).renderer.material.color = Color.white;
 					playersReady--;
 				}
 			}
