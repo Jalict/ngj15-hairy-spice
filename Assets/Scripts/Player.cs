@@ -15,6 +15,7 @@ public class Player : MonoBehaviour {
 	GameObject lastHitBy;
 	public GameObject sprite;
 	public int scaleFactor;
+    public GameObject splat;
 
 	CharacterController controller;
 
@@ -68,6 +69,7 @@ public class Player : MonoBehaviour {
 
 	public void Kill() {
 		isDead = true;
+        
 	}
 	void OnControllerColliderHit(ControllerColliderHit collision){
 		
@@ -81,6 +83,7 @@ public class Player : MonoBehaviour {
 				print("Damage taken: " + hitby.gameObject.rigidbody.velocity.magnitude * DmgTakeScale);
 			print((float) (health / maxHealth));
 			GameObject.Find ("HPBAR" + (xboxController+1)).GetComponent<UIProgressBar>().value =  ((float)health / (float)maxHealth);
+            Instantiate(splat, transform.position, Quaternion.identity);
 		}
 		}
 		if (collision.gameObject.tag == "Hole"){
