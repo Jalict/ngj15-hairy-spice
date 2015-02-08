@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r2">
+    <folder id="0">
+        <file id="0" name="ly_gun.png" width="586" height="755" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="1" name="ly_URightLeg.png" width="586" height="755" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="2" name="ly_LeftLegpng.png" width="586" height="755" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="3" name="ly_LeftArm.png" width="586" height="755" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="4" name="ly_head.png" width="586" height="755" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="5" name="ly_nose.png" width="586" height="755" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="6" name="ly_body.png" width="586" height="755" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="7" name="ly_LRightLeg.png" width="586" height="755" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="8" name="ly_asscuntfuckshitdamnhotmaan.png" width="586" height="755" pivot_x="0.5" pivot_y="0.5"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <obj_info name="bone_000" type="bone" w="252.785" h="10"/>
+        <obj_info name="bone_001" type="bone" w="215.41" h="10"/>
+        <obj_info name="bone_002" type="bone" w="64.0764" h="10"/>
+        <obj_info name="bone_003" type="bone" w="108.118" h="10"/>
+        <obj_info name="bone_004" type="bone" w="134.713" h="10"/>
+        <obj_info name="bone_005" type="bone" w="90.1099" h="10"/>
+        <obj_info name="bone_006" type="bone" w="94.0251" h="10"/>
+        <obj_info name="bone_007" type="bone" w="38.2727" h="10"/>
+        <animation id="0" name="NewAnimation" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="8" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="9" key="0"/>
+                    <bone_ref id="2" parent="1" timeline="10" key="0"/>
+                    <bone_ref id="3" parent="0" timeline="11" key="0"/>
+                    <bone_ref id="4" parent="0" timeline="12" key="0"/>
+                    <bone_ref id="5" parent="0" timeline="13" key="0"/>
+                    <bone_ref id="6" parent="5" timeline="14" key="0"/>
+                    <bone_ref id="7" parent="0" timeline="15" key="0"/>
+                    <object_ref id="0" timeline="2" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="3" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="0" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="4" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="6" key="0" z_index="4"/>
+                    <object_ref id="5" timeline="7" key="0" z_index="5"/>
+                    <object_ref id="6" timeline="1" key="0" z_index="6"/>
+                    <object_ref id="7" timeline="5" key="0" z_index="7"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="ly_body">
+                <key id="0" spin="0">
+                    <object folder="0" file="6" x="-30.30303" y="375.757576" a="0.42683"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="ly_head">
+                <key id="0" spin="0">
+                    <object folder="0" file="4" x="-30.30303" y="375.757576" a="0.42683"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="ly_LeftArm">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="-30.30303" y="375.757576" a="0.42683"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="ly_LeftLegpng">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="-30.30303" y="375.757576" a="0.42683"/>
+                </key>
+            </timeline>
+            <timeline id="4" name="ly_LRightLeg">
+                <key id="0" spin="0">
+                    <object folder="0" file="7" x="-30.30303" y="375.757576" a="0.42683"/>
+                </key>
+            </timeline>
+            <timeline id="5" name="ly_nose">
+                <key id="0" spin="0">
+                    <object folder="0" file="5" x="-30.30303" y="375.757576" a="0.42683"/>
+                </key>
+            </timeline>
+            <timeline id="6" name="ly_URightLeg">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-30.30303" y="375.757576" a="0.42683"/>
+                </key>
+            </timeline>
+            <timeline id="7" name="ly_asscuntfuckshitdamnhotmaan_000">
+                <key id="0" spin="0">
+                    <object folder="0" file="8" x="-30.30303" y="375.757576" a="0.42683"/>
+                </key>
+            </timeline>
+            <timeline id="8" obj="0" name="bone_000" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="68.131868" y="186.813187" angle="90.996348"/>
+                </key>
+            </timeline>
+            <timeline id="9" obj="1" name="bone_001" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="249.508376" y="1.15606" angle="14.386949"/>
+                </key>
+            </timeline>
+            <timeline id="10" obj="2" name="bone_002" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="21.201822" y="85.345464" angle="96.783049" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="11" obj="3" name="bone_003" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="139.83552" y="-48.592747" angle="205.568703"/>
+                </key>
+            </timeline>
+            <timeline id="12" obj="4" name="bone_004" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="-15.936434" y="-31.595796" angle="184.621233"/>
+                </key>
+            </timeline>
+            <timeline id="13" obj="5" name="bone_005" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="-30.430181" y="82.959266" angle="191.684036"/>
+                </key>
+            </timeline>
+            <timeline id="14" obj="6" name="bone_006" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="79.147682" y="1.340123" angle="31.846108" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="15" obj="7" name="bone_007" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="-37.223229" y="8.340831" angle="229.829994"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>
