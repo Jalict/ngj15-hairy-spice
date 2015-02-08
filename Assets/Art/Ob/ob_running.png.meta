@@ -1,0 +1,322 @@
+fileFormatVersion: 2
+guid: 1515f21861e82d04daf274836f3395f1
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ob_running_0
+    21300002: ob_running_1
+    21300004: ob_running_2
+    21300006: ob_running_3
+    21300008: ob_running_4
+    21300010: ob_running_5
+    21300012: ob_running_6
+    21300014: ob_running_7
+    21300016: ob_running_8
+    21300018: ob_running_9
+    21300020: ob_running_10
+    21300022: ob_running_11
+    21300024: ob_running_12
+    21300026: ob_running_13
+    21300028: ob_running_14
+    21300030: ob_running_15
+    21300032: ob_running_16
+    21300034: ob_running_17
+    21300036: ob_running_18
+    21300038: ob_running_19
+    21300040: ob_running_20
+    21300042: ob_running_21
+    21300044: ob_running_22
+    21300046: ob_running_23
+    21300048: ob_running_24
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ob_running_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1140
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ob_running_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1140
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ob_running_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1140
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ob_running_3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1140
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ob_running_4
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1140
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ob_running_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 855
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ob_running_6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 855
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ob_running_7
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 855
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ob_running_8
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 855
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ob_running_9
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 855
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ob_running_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 570
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ob_running_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 570
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ob_running_12
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 570
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ob_running_13
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 570
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ob_running_14
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 570
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ob_running_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 285
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ob_running_16
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 285
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ob_running_17
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 285
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ob_running_18
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 285
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ob_running_19
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 285
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ob_running_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ob_running_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ob_running_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ob_running_23
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ob_running_24
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 160
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

@@ -13,6 +13,8 @@ public class Player : MonoBehaviour {
     public bool isJoined;
 	public Vector3 movement;
 	GameObject lastHitBy;
+	public GameObject sprite;
+	public int scaleFactor;
 
 	CharacterController controller;
 
@@ -26,6 +28,10 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (Mathf.Abs (Input.GetAxis("L_XAxis_" + (xboxController + 1))) > 0.6f){
+			sprite.transform.localScale = new Vector3((-Input.GetAxis("L_XAxis_" + (xboxController+1)) / Mathf.Abs(Input.GetAxis("L_XAxis_" + (xboxController+1)))) * 2 * scaleFactor,sprite.transform.localScale.y,sprite.transform.localScale.z);
+		}
+
 		if (!controller.isGrounded){
 			movement.y -= gravity * Time.deltaTime; 
 		}
@@ -36,6 +42,7 @@ public class Player : MonoBehaviour {
 		}
 
 		// Check for left, right movement
+
 		movement.x = Input.GetAxis ("L_XAxis_" + (xboxController + 1)) * movementSpeed;
 
 		controller.Move(movement * Time.deltaTime);
