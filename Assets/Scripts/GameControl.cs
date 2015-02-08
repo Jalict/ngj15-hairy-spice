@@ -5,6 +5,7 @@ public class GameControl : MonoBehaviour
 {
 	public GameObject[] players;
 		public bool[] isDead = new bool[4];
+	public bool[] originalDead = new bool[4];
 		int activePlayers = 0;
 
 		// Use this for initialization
@@ -14,10 +15,12 @@ public class GameControl : MonoBehaviour
 				for (int i = 0; i < isDead.Length; i++) {
 						if (GameObject.Find ("Player_" + i)) {
 								isDead [i] = false;
+				originalDead [i] = false;
 								activePlayers++;
 						} else {
 								isDead [i] = true;
-								GameObject.Find ("HPBG" + i + 1).transform.parent.gameObject.SetActive (false);
+				originalDead [i] = true;
+								GameObject.Find ("HPBG" + (i + 1)).transform.parent.gameObject.SetActive (false);
 						}
 				}
 
@@ -31,7 +34,7 @@ public class GameControl : MonoBehaviour
 			
 		}
 	
-		void CheckDead ()
+		public void CheckDead ()
 		{
 				int deadCount = 0;
 				for (int i = 0; i < isDead.Length; i++) {
@@ -41,7 +44,7 @@ public class GameControl : MonoBehaviour
 				}
 				if (deadCount >= activePlayers - 1) {
 			for (int i = 0; i < isDead.Length; i++){
-			StartCoroutine(AnnounceWinner())
+				StartCoroutine(AnnounceWinner(1));
 			}
 				}
 		}
@@ -49,6 +52,9 @@ public class GameControl : MonoBehaviour
 		public IEnumerator AnnounceWinner (int winner)
 		{
 		yield return new WaitForSeconds(3);
+		for (int i = 0; i < isDead.Length; i++){
+			isDead[i] = originalDead[i];
+		}
 
 		for (int i = 0; i < players.Length; i++){
 			players[i].SetActive(true);

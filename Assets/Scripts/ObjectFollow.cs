@@ -11,6 +11,6 @@ public class ObjectFollow : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		transform.position = target.transform.position;
-		transform.Rotate(new Vector3(0,0,target.transform.rotation.z - transform.rotation.z));
+		//transform.Rotate(new Vector3(0,0,target.transform.rotation.z - transform.rotation.z));
 	}
 }

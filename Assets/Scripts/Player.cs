@@ -63,6 +63,7 @@ public class Player : MonoBehaviour {
 			GameObject.Find("GameController").GetComponent<GameControl>().isDead[xboxController] = true;
 			isDead = true;
 			gameObject.SetActive(false);
+			GameObject.Find ("GameController").GetComponent<GameControl>().CheckDead();
 		}
 		
 	}

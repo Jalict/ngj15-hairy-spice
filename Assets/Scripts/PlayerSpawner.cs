@@ -13,8 +13,10 @@ public class PlayerSpawner : MonoBehaviour {
 	
 	}
 	public void Spawn(){
-
+		GameObject.Find("Player_"+player).GetComponent<Player>().health = 100;
 		GameObject.Find("Player_"+player).transform.position = transform.position;
+
+		GameObject.Find("HPBG"+(player+1)).GetComponent<UIProgressBar>().value = 1; 
 
 	}
 }
