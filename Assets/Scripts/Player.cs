@@ -58,6 +58,11 @@ public class Player : MonoBehaviour {
 
 			//isDead = false;
 		transform.position = new Vector3(transform.position.x, transform.position.y, -2);
+		if (health <= 0){
+			GameObject.Find("GameController").GetComponent<GameControl>().isDead[xboxController] = true;
+			isDead = true;
+			gameObject.SetActive(false);
+		}
 		
 	}
 
