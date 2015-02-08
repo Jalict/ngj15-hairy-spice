@@ -19,7 +19,7 @@ public class Gun : MonoBehaviour {
 		}
 		transform.LookAt(gunTarget.transform);
 		if (Input.GetButtonDown("RB_"+ (xboxController+1))){
-			lastSpawn = (GameObject) Instantiate(projectile, new Vector3(transform.position.x,transform.position.y,0), transform.localRotation);
+			lastSpawn = (GameObject) Instantiate(projectile, new Vector3(transform.position.x,transform.position.y,0),transform.localRotation);
 			lastSpawn.GetComponent<Projectile>().playerFired = xboxController + 1;
 			lastSpawn.rigidbody.AddForce(lastSpawn.transform.forward * projectileSpeed);
 		}
