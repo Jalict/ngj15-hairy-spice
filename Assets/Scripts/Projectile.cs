@@ -7,6 +7,7 @@ public class Projectile : MonoBehaviour {
 	public float upMod;
 	public int playerFired;
     public AudioClip[] shootSound = new AudioClip[6];
+    public GameObject explosion;
 
 	// Use this for initialization
 	void Start () {
@@ -20,7 +21,8 @@ public class Projectile : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other){
-		if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Wall"){
+		if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Wall"){    
+            Instantiate(explosion,transform.position,Quaternion.identity);
 			if (other.gameObject.tag == "Enemy"){
 				other.rigidbody.AddForce(new Vector3(transform.position.x - other.transform.position.x, transform.position.y - other.transform.position.y, 0) * power);
 			}
@@ -29,13 +31,12 @@ public class Projectile : MonoBehaviour {
 				if (hit && hit.rigidbody && hit.gameObject.tag == "Enemy" && hit != other.gameObject){
 					hit.rigidbody.AddExplosionForce(power, transform.position, radius, upMod);
 					hit.GetComponent<PropCollider>().sibling.collider.isTrigger = false;
-				hit.GetComponent<PropCollider>().isLarge = true;
+				    hit.GetComponent<PropCollider>().isLarge = true;
 					hit.GetComponent<PropCollider>().stamp = Time.time;
 					hit.GetComponent<PropCollider>().SetPlayer(playerFired);
 					}
 				
 			}
-
 			Destroy(this.gameObject);
 		}
 
