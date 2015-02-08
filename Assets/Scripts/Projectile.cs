@@ -6,9 +6,12 @@ public class Projectile : MonoBehaviour {
 	public float radius;
 	public float upMod;
 	public int playerFired;
+    public AudioClip[] shootSound = new AudioClip[6];
+
 	// Use this for initialization
 	void Start () {
-	
+        GetComponent<AudioSource>().clip = shootSound[(int)(Random.value * shootSound.Length)];
+        GetComponent<AudioSource>().Play();
 	}
 	
 	// Update is called once per frame
