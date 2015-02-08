@@ -14,6 +14,15 @@ ModelImporter:
     100016: pPyramid1
     100018: pPyramid2
     100020: pSphere1
+    100022: polySurface1
+    100024: transform1
+    100026: transform2
+    100028: transform3
+    100030: transform4
+    100032: transform5
+    100034: transform6
+    100036: transform7
+    100038: transform8
     400000: group11
     400002: group14
     400004: //RootNode
@@ -25,6 +34,15 @@ ModelImporter:
     400016: pPyramid1
     400018: pPyramid2
     400020: pSphere1
+    400022: polySurface1
+    400024: transform1
+    400026: transform2
+    400028: transform3
+    400030: transform4
+    400032: transform5
+    400034: transform6
+    400036: transform7
+    400038: transform8
     2300000: pCube100
     2300002: pCube97
     2300004: pCube98
@@ -33,6 +51,7 @@ ModelImporter:
     2300010: pPyramid1
     2300012: pPyramid2
     2300014: pSphere1
+    2300016: polySurface1
     3300000: pCube100
     3300002: pCube97
     3300004: pCube98
@@ -41,6 +60,7 @@ ModelImporter:
     3300010: pPyramid1
     3300012: pPyramid2
     3300014: pSphere1
+    3300016: polySurface1
     4300000: pPlane5
     4300002: pSphere1
     4300004: pCube97
@@ -49,6 +69,7 @@ ModelImporter:
     4300010: pCube100
     4300012: pPyramid1
     4300014: pPyramid2
+    4300016: polySurface1
     7400000: Take 001
     9500000: //RootNode
   materials:

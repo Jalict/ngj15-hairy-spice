@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eee8fc201bee11d4394f702db82aafc1
+guid: 8c337fac039fd6e4688d8a5ad17be872
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -26,6 +26,27 @@ ModelImporter:
     100040: pCube8
     100042: pCube9
     100044: //RootNode
+    100046: polySurface1
+    100048: transform1
+    100050: transform10
+    100052: transform11
+    100054: transform12
+    100056: transform13
+    100058: transform14
+    100060: transform15
+    100062: transform16
+    100064: transform17
+    100066: transform18
+    100068: transform19
+    100070: transform2
+    100072: transform20
+    100074: transform3
+    100076: transform4
+    100078: transform5
+    100080: transform6
+    100082: transform7
+    100084: transform8
+    100086: transform9
     400000: group1
     400002: group2
     400004: pCube10
@@ -49,6 +70,27 @@ ModelImporter:
     400040: pCube8
     400042: pCube9
     400044: //RootNode
+    400046: polySurface1
+    400048: transform1
+    400050: transform10
+    400052: transform11
+    400054: transform12
+    400056: transform13
+    400058: transform14
+    400060: transform15
+    400062: transform16
+    400064: transform17
+    400066: transform18
+    400068: transform19
+    400070: transform2
+    400072: transform20
+    400074: transform3
+    400076: transform4
+    400078: transform5
+    400080: transform6
+    400082: transform7
+    400084: transform8
+    400086: transform9
     2300000: pCube10
     2300002: pCube11
     2300004: pCube12
@@ -69,6 +111,7 @@ ModelImporter:
     2300034: pCube27
     2300036: pCube8
     2300038: pCube9
+    2300040: polySurface1
     3300000: pCube10
     3300002: pCube11
     3300004: pCube12
@@ -89,6 +132,7 @@ ModelImporter:
     3300034: pCube27
     3300036: pCube8
     3300038: pCube9
+    3300040: polySurface1
     4300000: pCube8
     4300002: pCube9
     4300004: pCube10
@@ -109,6 +153,7 @@ ModelImporter:
     4300034: pCube25
     4300036: pCube26
     4300038: pCube27
+    4300040: polySurface1
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -129,7 +174,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
